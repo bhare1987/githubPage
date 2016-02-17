@@ -1,0 +1,31 @@
+.main {
+  display: inline-block;
+  width: 73%;
+  vertical-align: top;
+}
+
+.mainTabs {
+  width: 100%;
+  border-bottom: $githubGrayBorder;
+  color: $githubTextGray;
+  ul {
+    display: inline-block;
+    width: 83%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  div.button {
+    display: inline-block;
+    width: 16%;
+  }
+}
+
+.active {
+  color: $githubTextBlack;
+}

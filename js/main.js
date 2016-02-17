@@ -7,6 +7,9 @@ $(document).ready(function(){
   $(".info li:nth-child(1)").text(username.company);
   $(".info li:nth-child(2)").text(username.location);
   $(".info li:nth-child(3)").text("Joined on " + joinedOn.month + " " + joinedOn.day + ", " + joinedOn.year);
+  $(".following div:nth-child(1)").text(username.following);
+  $(".following div:nth-child(2)").text(username.followers);
+  $(".following div:nth-child(3)").text(username.followers);
 
 
 
