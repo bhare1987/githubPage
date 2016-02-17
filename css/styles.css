@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box; }
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto; }
+
+.mainNav {
+  width: 100%;
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px; }
+  .mainNav .navWrapper {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 7px;
+    padding-bottom: 7px; }
+  .mainNav .logo {
+    display: inline-block; }
+  .mainNav .searchBar {
+    display: inline-block;
+    width: 350px;
+    vertical-align: top;
+    margin-top: 2px;
+    margin-left: 5px; }
+    .mainNav .searchBar input {
+      width: 100%;
+      border: 1px solid #e5e5e5;
+      border-radius: 3px;
+      padding: 5px; }
+      .mainNav .searchBar input::-webkit-input-placeholder {
+        font-size: .8em;
+        line-height: 1.5; }
+  .mainNav .links {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    margin-top: 7px; }
+    .mainNav .links a {
+      text-decoration: none;
+      font-size: 13px;
+      color: black;
+      font-weight: bold; }
+      .mainNav .links a:hover {
+        color: #4078c0; }
+      .mainNav .links a li {
+        display: inline-block;
+        margin-left: 10px; }
+  .mainNav .subNav {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .mainNav .subNav a {
+      position: relative;
+      color: black; }
+      .mainNav .subNav a:hover {
+        color: #4078c0; }
+      .mainNav .subNav a:nth-child(3) li i.fa-sort-down {
+        left: 42px; }
+      .mainNav .subNav a li {
+        display: inline-block;
+        margin-left: 20px; }
+        .mainNav .subNav a li i.fa-sort-down {
+          position: absolute;
+          left: 34px;
+          top: -2px; }
+        .mainNav .subNav a li img {
+          width: 20px;
+          height: auto;
+          vertical-align: bottom; }
+
+.sidebar {
+  width: 30%;
+  display: inline-block; }
+
+.about .avatar {
+  width: 230px;
+  height: 230px; }
+  .about .avatar img {
+    width: 100%;
+    height: 100%; }

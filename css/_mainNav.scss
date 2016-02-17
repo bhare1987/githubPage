@@ -1,0 +1,91 @@
+.mainNav {
+  width: 100%;
+  background-color: $githubGray;
+  border-bottom: $githubGrayBorder;
+  margin-bottom: 20px;
+  .navWrapper {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  .logo{
+    display: inline-block;
+  }
+  .searchBar {
+    display: inline-block;
+    width: 350px;
+    vertical-align: top;
+    margin-top: 2px;
+    margin-left: 5px;
+    input {
+      width: 100%;
+      border: $githubGrayBorder;
+      border-radius: 3px;
+      padding: 5px;
+      &::-webkit-input-placeholder {
+        font-size: .8em;
+        line-height: 1.5;
+      }
+    }
+  }
+  .links {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    margin-top: 7px;
+    a {
+      text-decoration: none;
+      font-size: 13px;
+      color: black;
+      font-weight: bold;
+      &:hover {
+        color: $githubBlue;
+      }
+      li {
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+  }
+  .subNav {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    a {
+      position: relative;
+      color: black;
+      &:hover {
+        color: $githubBlue;
+      }
+      &:nth-child(3) {
+        li {
+          i.fa-sort-down {
+            left:42px;
+          }
+        }
+      }
+      li {
+        display: inline-block;
+        margin-left: 20px;
+        i.fa-sort-down {
+            position: absolute;
+            left: 34px;
+            top: -2px;
+        }
+        img {
+          width: 20px;
+          height: auto;
+          vertical-align: bottom;
+        }
+      }
+    }
+  }
+}

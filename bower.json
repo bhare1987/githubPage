@@ -1,0 +1,22 @@
+{
+  "name": "day13",
+  "authors": [
+    "bhare1987 <brandonlhare@gmail.com>"
+  ],
+  "description": "Recreate github",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "^1.8.3",
+    "jquery": "^2.2.0"
+  }
+}
