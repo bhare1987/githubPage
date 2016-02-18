@@ -26,7 +26,6 @@ $(document).ready(function(){
       selector.addClass("show");
     }
   });
-  console.log(activityList);
   $("section.repositories").append(repositories);
   $("section.publicActivity").append(activityList);
 
@@ -50,6 +49,20 @@ function cleanURL(url) {
   }
   return clean;
 }
+
+// function orgsMap(array) {
+//
+// }
+//
+// function orgsHTML(array) {
+//   var html = "";
+//   array.forEach(function(el){
+//     html += "<a href='"
+//           + el.avatar_url
+//           + "' target='_blank'>"
+//      <img src=""></a>
+//   });
+// }
 
 function respositoriesMap(array) {
   var result = array.map(function(el){
@@ -85,7 +98,6 @@ function repositoriesHTML(array) {
 }
 
 function activityMap(array) {
-  console.log(array);
     var result = array.map(function(el){
     if (el.type === "PushEvent"){
       return {
@@ -115,7 +127,6 @@ function activityMap(array) {
       }
     }
   });
-  console.log(result)
   return result;
 }
 
@@ -151,6 +162,5 @@ function activityHTML(array) {
       html += "</div>";
     }
   });
-  console.log(html);
   return html;
 }
