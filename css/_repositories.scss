@@ -90,6 +90,7 @@ header{
 
 .repoHeader {
   display: block;
+  position: relative;
   a {
     text-decoration: none;
     color: $githubBlue;
@@ -97,13 +98,19 @@ header{
       text-decoration: underline;
     }
     &:nth-of-type(2), &:nth-of-type(3) {
+      position: absolute;
+      top: 5px;
+      right: 0;
       display: inline-block;
       color: $githubDarkGray;
-      font-size: 14px;
-      margin-left: 8px;
+      font-size: 12px;
+      font-weight: bold;
       &:hover {
         color: $githubBlue;
       }
+    }
+    &:nth-of-type(2) {
+      right: 30px;
     }
     h3 {
       display: inline-block;
@@ -114,6 +121,9 @@ header{
     }
   }
   .repoLang {
+    position: absolute;
+    top: 5px;
+    right: 62px;
     display: inline-block;
     font-size: 12px;
     font-weight: bold;

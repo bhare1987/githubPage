@@ -225,19 +225,25 @@ header {
   border-bottom: 1px solid #e5e5e5; }
 
 .repoHeader {
-  display: block; }
+  display: block;
+  position: relative; }
   .repoHeader a {
     text-decoration: none;
     color: #4078c0; }
     .repoHeader a:hover h3 {
       text-decoration: underline; }
     .repoHeader a:nth-of-type(2), .repoHeader a:nth-of-type(3) {
+      position: absolute;
+      top: 5px;
+      right: 0;
       display: inline-block;
       color: #888;
-      font-size: 14px;
-      margin-left: 8px; }
+      font-size: 12px;
+      font-weight: bold; }
       .repoHeader a:nth-of-type(2):hover, .repoHeader a:nth-of-type(3):hover {
         color: #4078c0; }
+    .repoHeader a:nth-of-type(2) {
+      right: 30px; }
     .repoHeader a h3 {
       display: inline-block;
       margin: 0 0 8px;
@@ -245,6 +251,9 @@ header {
       font-size: 20px;
       line-height: 1.2; }
   .repoHeader .repoLang {
+    position: absolute;
+    top: 5px;
+    right: 62px;
     display: inline-block;
     font-size: 12px;
     font-weight: bold;
