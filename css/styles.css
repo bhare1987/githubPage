@@ -143,3 +143,76 @@ section {
 
 .show {
   display: block; }
+
+header {
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e5e5; }
+  header input[type="text"] {
+    width: 260px;
+    min-height: 34px;
+    padding: 7px 8px;
+    font-size: 13px;
+    color: #333;
+    vertical-align: middle;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075); }
+  header input[type="submit"] {
+    position: relative;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #333;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #eee;
+    background-image: -webkit-linear-gradient(#fcfcfc, #eee);
+    background-image: linear-gradient(#fcfcfc, #eee);
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none; }
+  header ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    header ul a {
+      color: #4078c0;
+      text-decoration: none;
+      font-size: 14px; }
+      header ul a.selected {
+        font-weight: bold;
+        color: #000; }
+      header ul a li {
+        display: inline-block;
+        margin-left: 6px; }
+  header div.newButton {
+    display: inline-block;
+    background-image: -webkit-linear-gradient(#8add6d, #60b044);
+    background-image: -o-linear-gradient(#8add6d, #60b044);
+    background-image: linear-gradient(#8add6d, #60b044);
+    background-color: #60b044;
+    border-color: #5ca941;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid #d5d5d5; }
+    header div.newButton:hover {
+      cursor: pointer;
+      background-image: linear-gradient(#79d858, #569e3d); }
