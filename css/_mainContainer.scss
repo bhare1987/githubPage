@@ -5,12 +5,14 @@
 }
 
 .mainTabs {
+  display:block;
   width: 100%;
   border-bottom: $githubGrayBorder;
   color: $githubTextGray;
+  margin-bottom: -1px;
   ul {
     display: inline-block;
-    width: 83%;
+    width: 100%;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -18,14 +20,47 @@
       display: inline-block;
       font-size: 14px;
       padding: 8px 12px;
+      padding-bottom: 15px;
+      &:hover {
+        cursor: pointer;
+      }
+      &:nth-child(4) {
+        font-size: 13px;
+        font-weight: bold;
+        color: $githubTextBlack;
+        margin-left: 28%;
+        border-radius: 5px;
+        border: $githubGrayBorder;
+        background-color: #eee;
+        padding: 5px 10px;
+      }
     }
-  }
-  div.button {
-    display: inline-block;
-    width: 16%;
   }
 }
 
-.active {
+li.active {
+  position: relative;
+  box-sizing: inherit;
   color: $githubTextBlack;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border: $githubGrayBorder;
+  border-bottom: 1px solid transparent;
+  &::after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+  }
+}
+
+section {
+  display: none;
+}
+
+.show {
+  display: block;
 }

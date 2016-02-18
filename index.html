@@ -62,21 +62,24 @@
       <section class="main">
         <nav class="mainTabs">
           <ul>
-            <li><i class="fa fa-lg fa-plus-square-o"></i> Contributions</li>
-            <li><i class="fa fa-lg fa-book"></i> Repositories</li>
-            <li><i class="fa fa-lg fa-rss"></i> Public Activity</li>
+            <li data-container=".contributions" class="active"><i class="fa fa-lg fa-plus-square-o"></i> Contributions</li>
+            <li data-container=".repositories"><i class="fa fa-lg fa-book"></i> Repositories</li>
+            <li data-container=".publicActivity"><i class="fa fa-lg fa-rss"></i> Public Activity</li>
+            <li><i class="fa fa-lg fa-pencil"></i> Edit profile</li>
           </ul>
-          <div class="button"><i class="fa fa-lg fa-pencil"></i> Edit profile</div>
         </nav>
-        <section class="contributions">
-
-        </section>
-        <section class="repositories">
-
-        </section>
-        <section class="publicActivity">
-
-        </section>
+        <div class="sectionContainer">
+          <section class="contributions show">
+            <h1>Contributions</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus laborum nostrum veritatis, nulla nesciunt totam praesentium sed beatae modi unde illum, dicta amet, fugiat quas delectus, reiciendis eligendi et nihil.
+          </section>
+          <section class="repositories">
+            <h1>Repositories</h1>
+          </section>
+          <section class="publicActivity">
+            <h1>Public activity</h1>
+          </section>
+        </div>
       </section>
     </div>
 
