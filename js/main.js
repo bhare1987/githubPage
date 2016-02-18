@@ -6,12 +6,14 @@ $(document).ready(function(){
   $("div.avatar > img").attr("src", username.avatar_url);
   $(".name").text(username.name);
   $(".userName").text(username.login);
-  $(".info li:nth-child(1)").text(username.company);
-  $(".info li:nth-child(2)").text(username.location);
-  $(".info li:nth-child(3)").text("Joined on " + joinedOn.month + " " + joinedOn.day + ", " + joinedOn.year);
-  $(".following div:nth-child(1)").text(username.following);
-  $(".following div:nth-child(2)").text(username.followers);
-  $(".following div:nth-child(3)").text(username.followers);
+  $(".info li:nth-child(1)").append(username.company);
+  $(".info li:nth-child(2)").append(username.location);
+  $(".info li:nth-child(3)").append("Joined on " + joinedOn.month + " " + joinedOn.day + ", " + joinedOn.year);
+  $(".following div:nth-child(1)").prepend(username.following);
+  $(".following div:nth-child(2)").prepend(username.followers);
+  $(".following div:nth-child(3)").prepend(username.followers);
+  $(".organizations a:nth-of-type(1) img").attr("src", orgs[0].avatar_url);
+  $(".organizations a:nth-of-type(2) img").attr("src", orgs[1].avatar_url);
   $(".mainTabs li").on("click", function(){
     if($(this).text() === " Edit profile"){
       return;
@@ -134,7 +136,7 @@ function activityHTML(array) {
   var html = "";
   array.forEach(function(el){
     if(el.type === "PushEvent") {
-      html += "<div class='eventContainer'>";
+      html += "<div class='eventContainer pushEvent'>";
       html += "<span class='mega-octicon octicon-git-commit'></span>";
       html += "<div class='repoUpdate'>" + moment.utc(el.created_at).fromNow() + "</div>";
       html += " <a href='" + el.user_url + "' target='_blank'>" + el.login + "</a> ";
@@ -146,7 +148,7 @@ function activityHTML(array) {
       html += "</div>";
       html += "</div>";
     } else if (el.type == "CreateEvent" && el.ref_type === "branch") {
-      html += "<div class='eventContainer'>";
+      html += "<div class='eventContainer createEvent'>";
       html += "<span class='octicon octicon-git-branch'></span>";
       html += " <a href='" + el.user_url + "' target='_blank'>" + el.login + "</a> ";
       html += "created branch " + "<a class='branchName' href='#' target='_blank'>" + el.branch + "</a> at ";
@@ -154,7 +156,7 @@ function activityHTML(array) {
       html += "<span class='repoUpdate'>" + moment.utc(el.created_at).fromNow() + "</span>";
       html += "</div>";
     } else if (el.type === "CreateEvent" && el.ref_type === "repository") {
-      html += "<div class='eventContainer'>";
+      html += "<div class='eventContainer createEvent'>";
       html += "<span class='octicon octicon-repo'></span>";
       html += " <a href='" + el.user_url + "' target='_blank'>" + el.login + "</a> ";
       html += "created repository <a class='repoLink' href='" + el.repo_url + "' target='_blank'>" + el.repo_name + "</a>";

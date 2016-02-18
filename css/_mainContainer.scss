@@ -29,10 +29,18 @@
         font-weight: bold;
         color: $githubTextBlack;
         margin-left: 28%;
-        border-radius: 5px;
+        border-radius: 3px;
         border: $githubGrayBorder;
         background-color: #eee;
+        background-image: linear-gradient(#fcfcfc, #eee);
         padding: 5px 10px;
+        &:hover {
+          text-decoration: none;
+          background-color: #ddd;
+          background-image: -webkit-linear-gradient(#eee, #ddd);
+          background-image: linear-gradient(#eee, #ddd);
+          border-color: #ccc;
+        }
       }
     }
   }
