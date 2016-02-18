@@ -52,20 +52,6 @@ function cleanURL(url) {
   return clean;
 }
 
-// function orgsMap(array) {
-//
-// }
-//
-// function orgsHTML(array) {
-//   var html = "";
-//   array.forEach(function(el){
-//     html += "<a href='"
-//           + el.avatar_url
-//           + "' target='_blank'>"
-//      <img src=""></a>
-//   });
-// }
-
 function respositoriesMap(array) {
   var result = array.map(function(el){
     return {
@@ -80,6 +66,7 @@ function respositoriesMap(array) {
       stargazers_url: cleanURL(el.stargazers_url)
     }
   });
+  result = _.sortBy(result, "updated_at").reverse();
   return result
 }
 
@@ -129,6 +116,7 @@ function activityMap(array) {
       }
     }
   });
+  result = _.sortBy(result, "updated_at");
   return result;
 }
 

@@ -1,3 +1,7 @@
+.publicActivity {
+  position: relative;
+}
+
 .eventContainer {
   position: relative;
   padding: 14px 0 1em 45px;
@@ -76,4 +80,17 @@
       font-size: 13px;
     }
   }
+}
+
+.rssButton {
+  position: absolute;
+  right: 0;
+  top: 12px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  color: #fff;
+  text-align: center;
+  background: #f37538;
+  border-radius: 3px;
 }
